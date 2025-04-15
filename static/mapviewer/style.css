@@ -1,0 +1,175 @@
+:root {
+    --primary: #4CAF50;
+    --secondary: #8BC34A;
+    --neutral: #F5F7FA;
+    --text: #333333;
+    --accent: #FFA000;
+    --spacing: 16px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    background-color: var(--neutral);
+    color: var(--text);
+  }
+  
+  header {
+    background-color: var(--primary);
+    color: white;
+    padding: var(--spacing);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  main {
+    display: flex;
+    height: calc(100vh - 100px);
+    flex-direction: row;
+  }
+  
+  #areaOutput {
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--neutral);
+    border-left: 4px solid var(--primary);
+    border-radius: 4px;
+    margin-bottom: var(--spacing);
+  }
+  
+  /* Search bar above map */
+  .search-bar {
+    padding: var(--spacing);
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Map area */
+  .map-container {
+    flex: 3;
+    height: 100%;
+    background-color: #ccc;
+    padding: 4px;
+  }
+  
+  /* Sidebar for parcel info */
+  .sidebar {
+    flex: 1;
+    background-color: white;
+    border-left: 2px solid var(--secondary);
+    padding: var(--spacing);
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: var(--spacing);
+    font-size: 18px;
+  }
+  
+  #areaOutput {
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--neutral);
+    border-left: 4px solid var(--primary);
+    border-radius: 4px;
+    margin-bottom: var(--spacing);
+  }
+  
+  /* Search + Filter UI inside sidebar */
+  #searchInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: var(--spacing);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Parcel list display */
+  #parcelList {
+    list-style-type: none;
+  }
+  
+  #parcelList li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid var(--accent);
+    background-color: var(--neutral);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  #parcelList li:hover {
+    background-color: #e8f5e9;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .map-container {
+      height: 50vh;
+    }
+  
+    .sidebar {
+      height: 50vh;
+      border-left: none;
+      border-top: 2px solid var(--secondary);
+    }
+  
+    header {
+      font-size: 20px;
+    }
+  
+    .sidebar h2 {
+      font-size: 16px;
+    }
+  }
+/* Add in style.css */
+.map-container {
+  height: 80vh;
+  width: 100%;
+}
+  
