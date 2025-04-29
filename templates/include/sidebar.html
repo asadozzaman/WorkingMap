@@ -1,0 +1,67 @@
+{% load static %}
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <!-- Logo -->
+        <div class="sidebar-logo">
+            <a href="index.html" class="logo logo-normal">
+                <img src="{% static 'assets/img/logo.svg' %}" alt="Img">
+            </a>
+            <a href="index.html" class="logo logo-white">
+                <img src="{% static 'assets/img/logo.svg' %}" alt="Img">
+            </a>
+            <a href="index.html" class="logo-small">
+                <img src="{% static 'assets/img/logo.svg' %}" alt="Img">
+            </a>
+            <a id="toggle_btn" href="javascript:void(0);">
+                <i data-feather="chevrons-left" class="feather-16"></i>
+            </a>
+        </div>
+        <!-- /Logo -->
+        <div class="modern-profile p-3 pb-0">
+            <div class="text-center rounded bg-light p-3 mb-4 user-profile">
+                <div class="avatar avatar-lg online mb-3">
+                    <img src="assets/img/customer/customer15.jpg" alt="Img" class="img-fluid rounded-circle">
+                </div>
+                <h6 class="fs-14 fw-bold mb-1">Faysal Ahmed</h6>
+                <p class="fs-12 mb-0">System Admin</p>
+            </div>
+            <div class="sidebar-nav mb-3">
+                <ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified bg-transparent" role="tablist">
+                    <li class="nav-item"><a class="nav-link active border-0" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link border-0" href="chat.html">Chats</a></li>
+                    <li class="nav-item"><a class="nav-link border-0" href="email.html">Inbox</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="sidebar-inner slimscroll">
+            <div id="sidebar-menu" class="sidebar-menu">
+                <ul>
+                    <li class="submenu-open">
+                        <h6 class="submenu-hdr">Main</h6>
+                        <ul>
+                            <li class="submenu-open">
+                                <ul>
+                                    <li><a href="{% url 'dashboard' %}"><i data-feather="box"></i><span>Dashboard</span></a></li>
+                                    <li><a href="{% url 'company' %}"><i class="ti ti-table-plus fs-16 me-2"></i><span>Company</span></a></li>
+                                    <li><a href="{% url 'customer' %}"><i class="ti ti-table-plus fs-16 me-2"></i><span>Customer</span></a></li>
+                                    <li><a href="{% url 'device' %}"><i class="ti ti-table-plus fs-16 me-2"></i><span>Device</span></a></li>
+                                   
+                                </ul>
+                            </li>
+                            <!-- <li class="submenu">
+                                <a href="javascript:void(0);"><i class="ti ti-user-edit fs-16 me-2"></i><span>Super Admin</span><span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="companies.html">Companies</a></li>
+                                    <li><a href="subscription.html">Subscriptions</a></li>
+                                    
+                                </ul>
+                            </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /Sidebar -->

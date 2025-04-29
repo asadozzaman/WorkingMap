@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mapviewer',
+    'authapp',
+    'companyapp',
+    'customerapp',
+    'dashboardapp',
+    'deviceapp',
 ]
 
 MIDDLEWARE = [
